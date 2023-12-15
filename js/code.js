@@ -11,7 +11,7 @@ var totalPagar = result + monto;
 
 
 if (isNaN(monto) || isNaN(porcentajePropina)) {
-    alert("Por favor, ingrese los valores Solicitados");return
+    alert("Por favor, ingrese los valores solicitados.");return
 } 
 else {
     document.getElementById("monto_propina").value = Math.trunc(result);
