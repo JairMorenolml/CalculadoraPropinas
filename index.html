@@ -4,49 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Calculadora Propinas</title>
-
     <link href="img/favicon.ico" rel="icon" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="calculadora">
-      <div class="content">
-        <h2>CALCULADORA<br />PROPINAS</h2>
-        <div class="operacion">
-          <label
-            >Monto Inicial<br /><input
-              class="input"
-              autocomplete="off"
-              id="monto"
-              onkeydown="return numbersAlone(event);" /></label
-          ><br />
-          <label
-            >% Propina<br /><input
-              class="input"
-              autocomplete="off"
-              id="%_propina"
-              onkeydown="return numbersAlone(event);" /></label
-          ><br />
-          <label
-            >Monto Propina<br /><input
-              class="input"
-              id="monto_propina"
-              disabled /></label
-          ><br />
-          <label
-            >Total A Pagar<br /><input
-              class="input"
-              id="total_a_pagar"
-              disabled
-          /></label>
-        </div>
-        <div class="btns">
-          <button class="boton" onclick="calcular()">Calcular</button>
-          <button class="boton" onclick="reset()">Reset</button>
-        </div>
-        <b><span id="mensaje"></span></b>
+    <div class="content">
+      <h2>CALCULADORA<br />PROPINAS</h2>
+      <div class="operacion">
+        <label
+          >Monto Inicial<br /><input
+            class="input"
+            autocomplete="off"
+            id="monto"
+            onkeydown="return numbersAlone(event);" /></label
+        ><br />
+        <label
+          >% Propina<br /><input
+            class="input"
+            autocomplete="off"
+            id="%_propina"
+            onkeydown="return numbersAlone(event);" /></label
+        ><br />
+        <label
+          >Monto Propina<br /><input
+            class="input"
+            id="monto_propina"
+            disabled /></label
+        ><br />
+        <label
+          >Total A Pagar<br /><input class="input" id="total_a_pagar" disabled
+        /></label>
       </div>
+      <div class="btns">
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+      <b><span id="mensaje"></span></b>
     </div>
+
     <script src="js/code.js"></script>
   </body>
 </html>

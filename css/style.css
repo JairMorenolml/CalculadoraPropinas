@@ -1,76 +1,79 @@
-body {
-     display: flex;
-     background-color: #27374D;
-     margin-top: 3rem;
-   }
-.calculadora{
-     background-color: #526D82;
-     width: 100%;
-     max-width: 280px;
-     margin: auto;
-     padding: 0.875rem;
-     border-radius: 1.2rem;
-     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
-}
-.content{
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     padding: 0.1px;
-     color: #DDE6ED;
+* {
+     box-sizing: border-box;
      margin: 0;
-     width:100%;
-     height: 100%;
-     border-radius: 1.188rem;
-     text-align: center;
-}
-.content h2{
-     font-size: 1.3rem;
-}
-.content label{
-     font-size: 12px;
-     
-}
-.input{
-     width: 40%;
-     margin-bottom: 0.25rem;
-     text-align: center;
-     border: 1px solid #526D82;
-     border-radius: 0.3rem;
-     box-shadow: 0 2px 3px rgba(0 0 0 / 0.15);
-}
-.input::-webkit-input-placeholder{
-     text-align: center;
-     color: black;
-}
-.btns{
-     display: block;
-     margin-top: 10px;
-     margin-bottom: 1.5rem;
-     
-}
-.boton{
-     border-radius: 20px;
-     border:solid 4px #9DB2BF;
-     background-color: #9DB2BF;
-     font-family: 'Ubuntu', sans-serif;
-     font-weight: bold;
-     color:   #27374D;
-}
-#mensaje{
-     display: block;
-     font-size: 16px;
-     color:black;
-     margin-bottom: 12px;
-}
-@media screen and (max-width: 330px) {
-     .calculadora {
-       width: 90%;
-       max-width: none;
-     }
-     .content h2 {
-          font-size: 1.2rem;
-     }
-     .input {
-       width: 50%;
-     }
- 
+     padding: 0;
    }
+body {
+  height: 100vh;
+  display: grid;
+  background-color: #27374d;
+  place-items: center;
+}
+.content {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 2.5rem;
+     background-color: #526d82;
+     color: #dde6ed;
+     margin: auto;
+     width: 320px;
+     max-width: 100%;
+     height: auto;
+     border-radius: 1rem;
+     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+     text-align: center;
+   }
+.content h2 {
+  font-size: 1.5rem;
+}
+.operacion{
+  margin-top: 1.5rem;
+}
+.operacion label {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.input {
+  width: 60%;
+  height: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  font-family: monospace;
+  border: 1px solid #526d82;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 3px rgba(0 0 0 / 0.15);
+}
+.input::-webkit-input-placeholder {
+  text-align: center;
+  color: black;
+}
+.btns {
+  margin-top: 1rem;
+
+}
+button {
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  background-color: #9db2bf;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #27374d;
+  width: 36%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #27374d38;
+  color: white;
+}
+button:active {
+  background-color: #27374db0;
+  color: white;
+}
+#mensaje {
+  display: block;
+  font-size: 16px;
+  color: black;
+  margin-top: 1rem;
+}

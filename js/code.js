@@ -1,4 +1,3 @@
-//--->
 function calcular()
 
 {
@@ -19,7 +18,7 @@ else {
     document.getElementById("mensaje").innerHTML = "¡¡Operacion Realizada!!"
 }
 }
-//--->
+
 function reset() {
     document.getElementById("monto").value = "";
     document.getElementById("%_propina").value = "";
@@ -27,7 +26,7 @@ function reset() {
     document.getElementById("total_a_pagar").value = "";
     document.getElementById("mensaje").innerHTML = "";
 }
-//--->
+
 function numbersAlone(event){
     let number = event.keyCode;
     if((number < 58 && number > 47) || (number === 8) || (number === 9)){
